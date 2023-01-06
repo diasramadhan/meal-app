@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal</title>
+  </head>
+
+  <body>
+    <navigation-bar></navigation-bar>
+
+    <hero-section></hero-section>
+
+    <!-- ========== Start Header Menu Makanan ========== -->
+    <header class="pt-5 text-center" id="product">
+      <h1 class="text-primary fw-bold">Temukan Menu Makanan Anda</h1>
+      <blockquote class="mt-4">
+        Cari dan dapatkan resep makanan secara gratis<br />
+        <cite>- Dias Nur Ramadhan</cite>
+      </blockquote>
+      <p>Cobalah dengan mengetikan "beef" dikolom pencarian</p>
+    </header>
+    <!-- ========== End Header Menu Makanan ========== -->
+
+    <!-- ========== Start Menu Pencarian ========== -->
+    <div class="d-flex justify-content-center flex-wrap mb-5">
+      <div class="col-md-6">
+        <div class="input-group mb-3 position-relative">
+          <input
+            type="text"
+            class="form-control input-keyword ps-5 position-relative"
+            placeholder="Cari Makanan"
+            id="searchFood"
+          />
+          <button class="btn search-button btn-primary" type="button" id="button-search">
+            Cari
+          </button>
+        </div>
+      </div>
+      <h2 class="text-primary fw-bold col-12 text-center">Hasil Pencarian</h2>
+    </div>
+    <!-- ========== End Menu Pencarian ========== -->
+
+    <!-- ========== Start Container Food ========== -->
+    <div class="container">
+      <div class="row meal-container"></div>
+    </div>
+    <!-- ========== End Container Food ========== -->
+
+    <!-- Start Modal -->
+    <div
+      class="modal fade"
+      id="mealDetailModal"
+      tabindex="-1"
+      aria-labelledby="mealDetailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mealDetailModalLabel">Description Meal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <footer-app id="footer"></footer-app>
+  </body>
+</html>
